@@ -9,8 +9,10 @@ namespace Hakuturu.Models
 {
     public class PcInfoItem
     {
+        public int ID { set; get; }   //←これが必要
+
         [Display(Name = "PC管理番号")]
-        public string PcId { set; get; }
+        public string PcNo { set; get; }
         [Display(Name = "IPアドレス")]
         public string IpAddress { set; get; }
         [Display(Name = "使用区分")]
@@ -29,6 +31,6 @@ namespace Hakuturu.Models
     }
     public class PcInfoDBContext : DbContext
     {
-        public DbSet<PcInfoItem> PcInfoList { set; get; }
+        public DbSet<PcInfoItem> PcInfoItems { set; get; }
     }
 }

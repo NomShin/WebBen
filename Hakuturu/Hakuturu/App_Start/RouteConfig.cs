@@ -16,7 +16,7 @@ namespace Hakuturu
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Hakuturu", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "PcInfoItems", action = "Index", id = UrlParameter.Optional }
             );
         }
     }
