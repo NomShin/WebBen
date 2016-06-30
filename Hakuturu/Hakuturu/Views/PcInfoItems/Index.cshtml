@@ -12,16 +12,37 @@
 
     @using (Html.BeginForm("Index", "PcInfoItems", FormMethod.Get))
     {
-        <div>
-            PC管理番号: @Html.TextBox("PcNo")<br />
-            IPアドレス: @Html.TextBox("IpAddress")<br />
-            使用区分: @Html.TextBox("UseSegment")<br />
-            機種: @Html.TextBox("ModelName")<br />
-            型番: @Html.TextBox("ModelNo")<br />
-            使用者名: @Html.TextBox("UserName")<br />
-            PC名: @Html.TextBox("PcName")<br />
-            <input type="submit" value="検索" />
-        </div>
+        <table>
+            <tr>
+                <td>PC管理番号:</td>
+                <td>@Html.TextBox("PcNo")</td>
+            </tr>
+            <tr>
+                <td>IPアドレス:</td>
+                <td>@Html.TextBox("IpAddress")</td>
+            </tr>
+            <tr>
+                <td>使用区分:</td>
+                <td>@Html.TextBox("UseSegment")</td>
+            </tr>
+            <tr>
+                <td>機種:</td>
+                <td>@Html.TextBox("ModelName")</td>
+            </tr>
+            <tr>
+                <td>型番:</td>
+                <td>@Html.TextBox("ModelNo")</td>
+            </tr>
+            <tr>
+                <td>使用者名:</td>
+                <td>@Html.TextBox("UserName")</td>
+            </tr>
+            <tr>
+                <td>PC名:</td>
+                <td>@Html.TextBox("PcName")</td>
+            </tr>
+        </table>
+        <input type="submit" value="検索" />
     }
 </p>
 <table class="table">
